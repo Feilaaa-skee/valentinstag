@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Für dich ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="hero">
+    <h1>Für dich ❤️</h1>
+    <p>Ein kleiner Ort nur für uns zwei.</p>
+  </section>
+
+  <section class="gallery">
+    <img src="bilder/bild1.jpg" alt="Wir 1">
+    <img src="bilder/bild2.jpg" alt="Wir 2">
+    <img src="bilder/bild3.jpg" alt="Wir 3">
+  </section>
+
+  <section class="riddle">
+    <h2>Kleines Rätsel 🧩</h2>
+    <p>Wann hatten wir unser erstes Date?</p>
+    <input type="text" id="answer" placeholder="z. B. 14.02.2023">
+    <button onclick="checkAnswer()">Antwort prüfen</button>
+    <p id="result"></p>
+  </section>
+
+  <section class="love hidden" id="loveMessage">
+    <h2>💌</h2>
+    <p>
+      Egal wie viele Tage vergehen –  
+      ich würde dich immer wieder wählen.  
+      Danke, dass du mein Mensch bist ❤️
+    </p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

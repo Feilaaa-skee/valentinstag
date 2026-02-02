@@ -1,0 +1,65 @@
+* {
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #fff5f7;
+  color: #333;
+  text-align: center;
+}
+
+.hero {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+  color: white;
+}
+
+.gallery {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.riddle {
+  padding: 40px 20px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #ff6f91;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff4f7a;
+}
+
+.love {
+  padding: 50px 20px;
+  background: #fff;
+  font-size: 1.2em;
+}
+
+.hidden {
+  display: none;
+}
