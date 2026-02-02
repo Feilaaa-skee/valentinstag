@@ -1,6 +1,6 @@
 * {
-  font-family: 'Arial', sans-serif;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 body {
@@ -8,14 +8,24 @@ body {
   background: #fff5f7;
   color: #333;
   text-align: center;
+  transition: background 0.3s, color 0.3s;
 }
 
+/* Hero */
 .hero {
   padding: 60px 20px;
   background: linear-gradient(135deg, #ffafbd, #ffc3a0);
   color: white;
 }
 
+/* Counter */
+.counter {
+  padding: 40px 20px;
+  background: #fff;
+  font-size: 1.2em;
+}
+
+/* Galerie */
 .gallery {
   display: flex;
   gap: 15px;
@@ -30,6 +40,7 @@ body {
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
+/* Rätsel */
 .riddle {
   padding: 40px 20px;
 }
@@ -42,7 +53,7 @@ input {
 
 button {
   padding: 10px 20px;
-  margin-left: 10px;
+  margin-top: 10px;
   border: none;
   border-radius: 8px;
   background: #ff6f91;
@@ -54,12 +65,54 @@ button:hover {
   background: #ff4f7a;
 }
 
-.love {
-  padding: 50px 20px;
+/* Brief */
+.letter {
+  padding: 40px 20px;
+}
+
+.letter-content {
+  margin: 20px auto 0;
+  max-width: 600px;
   background: #fff;
-  font-size: 1.2em;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  animation: fadeIn 1.2s ease;
 }
 
 .hidden {
   display: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Dark Mode Button */
+.mode-toggle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  border: none;
+  background: #ff6f91;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Dark Mode */
+body.night {
+  background: #1e1e2f;
+  color: #f2f2f2;
+}
+
+body.night .hero {
+  background: linear-gradient(135deg, #2b2b4f, #3a3a6a);
+}
+
+body.night .counter,
+body.night .letter-content {
+  background: #2b2b4f;
 }
