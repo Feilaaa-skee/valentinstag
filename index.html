@@ -7,17 +7,29 @@
 </head>
 <body>
 
+  <!-- Dark Mode Button -->
+  <button class="mode-toggle" onclick="toggleMode()">🌙</button>
+
+  <!-- Hero -->
   <section class="hero">
     <h1>Für dich ❤️</h1>
     <p>Ein kleiner Ort nur für uns zwei.</p>
   </section>
 
+  <!-- Counter -->
+  <section class="counter">
+    <h2>Wir seit ❤️</h2>
+    <p id="timeTogether"></p>
+  </section>
+
+  <!-- Galerie -->
   <section class="gallery">
-    <img src="https://Feilaaa-skee.github.io/valentinstag/bilder/bild1.jpg">
+    <img src="bilder/bild1.jpg" alt="Wir 1">
     <img src="bilder/bild2.jpg" alt="Wir 2">
     <img src="bilder/bild3.jpg" alt="Wir 3">
   </section>
 
+  <!-- Rätsel -->
   <section class="riddle">
     <h2>Kleines Rätsel 🧩</h2>
     <p>Wann hatten wir unser erstes Date?</p>
@@ -26,16 +38,23 @@
     <p id="result"></p>
   </section>
 
-  <section class="love hidden" id="loveMessage">
-    <h2>💌</h2>
-    <p>
-      Egal wie viele Tage vergehen –  
-      ich würde dich immer wieder wählen.  
-      Danke, dass du mein Mensch bist ❤️
-    </p>
+  <!-- Brief -->
+  <section class="letter">
+    <button onclick="openLetter()">💌 Brief öffnen</button>
+
+    <div id="letterContent" class="letter-content hidden">
+      <p>Hey du,</p>
+      <p>
+        ich wollte dir einfach sagen, wie unglaublich dankbar ich bin,
+        dass es uns gibt.
+      </p>
+      <p>
+        Mit dir fühlt sich alles leichter an.<br>
+        Ich liebe dich ❤️
+      </p>
+    </div>
   </section>
 
   <script src="script.js"></script>
 </body>
 </html>
-
