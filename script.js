@@ -5,9 +5,9 @@ function checkAnswer() {
   const love = document.getElementById("letterContent");
 
   if (answer === "14.02.2023") { // <-- HIER Datum anpassen
-    result.textContent = "Richtig ❤️";
+    result.textContent = "Nawwwwww Bbyyyyyyyyy ❤️";
   } else {
-    result.textContent = "Hmm… probier’s nochmal 😉";
+    result.textContent = "Hmm… sicher Autokorrektur 😉";
   }
 }
 
@@ -38,3 +38,4 @@ updateCounter();
 function toggleMode() {
   document.body.classList.toggle("night");
 }
+
